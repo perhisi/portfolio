@@ -257,7 +257,7 @@ export default function Project() {
                                 </p>
                                 <div className="flex gap-3 mt-auto">
                                     <a
-                                        href="project-4.html"
+                                        href="./project4"
                                         className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-2 px-4 rounded-lg font-medium text-sm transition-all duration-300 btn-primary"
                                     >View Details</a
                                     >
