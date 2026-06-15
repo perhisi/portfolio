@@ -134,19 +134,19 @@ export default function Home() {
                   and collaborative problem solving to deliver reliable
                   applications. Through a
                   <span className="text-indigo-600 dark:text-indigo-400 font-medium"
-                  >RevoU project</span
+                  > RevoU project</span
                   >, I integrated
                   <span className="text-indigo-600 dark:text-indigo-400 font-medium"
-                  >Next.js</span
+                  > Next.js </span
                   >
                   on the frontend with
                   <span className="text-indigo-600 dark:text-indigo-400 font-medium"
-                  >Nest.js</span
+                  > Nest.js </span
                   >
                   on the backend to deliver a responsive web app while sharing
                   debugging lessons with teammates. My work with
                   <span className="text-teal-600 dark:text-teal-400 font-medium"
-                  >JavaScript, TypeScript, and Tailwind CSS</span
+                  > JavaScript, TypeScript, and Tailwind CSS</span
                   >
                   , combined with my ability to read code paths and resolve bugs,
                   helps me stabilize applications quickly. I follow best practices
@@ -164,7 +164,7 @@ export default function Home() {
                 <p className="text-base sm:text-lg">
                   In my portfolio, you&apos;ll find a collection of
                   <span className="text-indigo-600 dark:text-indigo-400 font-medium"
-                  >projects that showcase my skills</span
+                  > projects that showcase my skills </span
                   >
                   and creativity. Each project reflects my commitment to quality,
                   attention to detail, and passion for clean code.
@@ -466,7 +466,6 @@ export default function Home() {
                   <form
                     action="https://formsubmit.co/perhisi01@gmail.com"
                     method="POST"
-                    encType="text/plain"
                     className="space-y-5"
                   >
                     <div>

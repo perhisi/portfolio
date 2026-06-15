@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`data-scroll-behavior="smooth" ${geistSans.variable} ${geistMono.variable}`}>
       <body>
         {children}
         <Script src="/js/script.js" strategy="afterInteractive" />

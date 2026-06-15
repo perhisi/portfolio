@@ -13,7 +13,7 @@ export default function Project4() {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     {/* <!-- Back Button --> */}
                     <a
-                        href="index.html#projects"
+                        href="/#projects"
                         className="inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300 mb-8 group"
                     >
                         <svg
@@ -392,7 +392,7 @@ export default function Project4() {
                                 </div>
                             </div>
 
-                            {/* <!-- Other Projects --> */}
+                            {/* Other Projects */}
                             <div className="glass-card rounded-2xl p-6 shadow-xl">
                                 <h3
                                     className="text-lg font-semibold mb-4 text-slate-800 dark:text-white"
@@ -400,6 +400,19 @@ export default function Project4() {
                                     Other Projects
                                 </h3>
                                 <div className="space-y-3">
+                                    <Link
+                                        href="/project1"
+                                        className="block p-3 rounded-xl bg-slate-100 dark:bg-slate-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
+                                    >
+                                        <span
+                                            className="text-slate-800 dark:text-white font-medium text-sm"
+                                        >Portfolio Website</span
+                                        >
+                                        <span
+                                            className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
+                                        >HTML, CSS, JavaScript</span
+                                        >
+                                    </Link>
                                     <Link
                                         href="/project2"
                                         className="block p-3 rounded-xl bg-slate-100 dark:bg-slate-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
@@ -424,6 +437,32 @@ export default function Project4() {
                                         <span
                                             className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
                                         >Next.js, Tailwind CSS</span
+                                        >
+                                    </Link>
+                                    <Link
+                                        href="/project5"
+                                        className="block p-3 rounded-xl bg-slate-100 dark:bg-slate-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
+                                    >
+                                        <span
+                                            className="text-slate-800 dark:text-white font-medium text-sm"
+                                        >WeRent Backend System </span
+                                        >
+                                        <span
+                                            className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
+                                        >Next.js, Tailwind CSS</span
+                                        >
+                                    </Link>
+                                    <Link
+                                        href="/project6"
+                                        className="block p-3 rounded-xl bg-slate-100 dark:bg-slate-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
+                                    >
+                                        <span
+                                            className="text-slate-800 dark:text-white font-medium text-sm"
+                                        >Mamabear E-Commerce Backend</span
+                                        >
+                                        <span
+                                            className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
+                                        >Nest.js, PostgreSQL</span
                                         >
                                     </Link>
                                 </div>

@@ -505,6 +505,19 @@ export default function Project5() {
                                         >Nest.js, JWT</span
                                         >
                                     </Link>
+                                    <Link
+                                        href="/project6"
+                                        className="block p-3 rounded-xl bg-slate-100 dark:bg-slate-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
+                                    >
+                                        <span
+                                            className="text-slate-800 dark:text-white font-medium text-sm"
+                                        >Mamabear E-Commerce Backend</span
+                                        >
+                                        <span
+                                            className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
+                                        >Nest.js, PostgreSQL</span
+                                        >
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -416,7 +416,7 @@ export default function Project1() {
                                 </div>
                             </div>
 
-                            {/* <!-- Other Projects --> */}
+                            {/* Other Projects */}
                             <div className="glass-card rounded-2xl p-6 shadow-xl">
                                 <h3
                                     className="text-lg font-semibold mb-4 text-slate-800 dark:text-white"
@@ -438,6 +438,19 @@ export default function Project1() {
                                         >
                                     </Link>
                                     <Link
+                                        href="/project3"
+                                        className="block p-3 rounded-xl bg-slate-100 dark:bg-slate-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
+                                    >
+                                        <span
+                                            className="text-slate-800 dark:text-white font-medium text-sm"
+                                        >C.R.A.C.K Frontend</span
+                                        >
+                                        <span
+                                            className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
+                                        >Next.js, Tailwind CSS</span
+                                        >
+                                    </Link>
+                                    <Link
                                         href="/project4"
                                         className="block p-3 rounded-xl bg-slate-100 dark:bg-slate-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
                                     >
@@ -448,6 +461,32 @@ export default function Project1() {
                                         <span
                                             className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
                                         >Nest.js, JWT</span
+                                        >
+                                    </Link>
+                                    <Link
+                                        href="/project5"
+                                        className="block p-3 rounded-xl bg-slate-100 dark:bg-slate-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
+                                    >
+                                        <span
+                                            className="text-slate-800 dark:text-white font-medium text-sm"
+                                        >WeRent Backend System </span
+                                        >
+                                        <span
+                                            className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
+                                        >Next.js, Tailwind CSS</span
+                                        >
+                                    </Link>
+                                    <Link
+                                        href="/project6"
+                                        className="block p-3 rounded-xl bg-slate-100 dark:bg-slate-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
+                                    >
+                                        <span
+                                            className="text-slate-800 dark:text-white font-medium text-sm"
+                                        >Mamabear E-Commerce Backend</span
+                                        >
+                                        <span
+                                            className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
+                                        >Nest.js, PostgreSQL</span
                                         >
                                     </Link>
                                 </div>

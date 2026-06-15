@@ -4,15 +4,17 @@ import ImageGallery from "../components/image-galery";
 import { images } from "../components/image-data";
 import Link from "next/link";
 
-export default function Project2() {
 
+export default function Project6() {
+    
     return (
         <div className="min-h-screen px-4 sm:px-6 md:px-8 lg:px-12 font-mono bg-slate-50 dark:bg-slate-900 dark:text-white selection:bg-indigo-500 selection:text-white">
             <HeaderProject />
+
             {/* <!-- Project Detail Section --> */}
             <section className="min-h-screen pt-24 pb-16">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    {/* <!-- Back Button --> */}
+                    {/* Back Button */}
                     <Link
                         href="/#projects"
                         className="inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300 mb-8 group"
@@ -33,17 +35,17 @@ export default function Project2() {
                         Back to Projects
                     </Link>
 
-                    {/* <!-- Project Header --> */}
+                    {/* Project Header */}
                     <div className="max-w-4xl mx-auto mb-12">
                         <h1
                             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-slate-800 dark:text-white"
                         >
-                            C.R.A.C.K Project Backend
+                            Mamabear E-Commerce Backend
                         </h1>
                         <div className="flex flex-wrap gap-2 mb-6">
                             <span
                                 className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-4 py-2 rounded-full text-sm font-medium"
-                            >Nest.js</span
+                            >NestJS</span
                             >
                             <span
                                 className="badge bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 px-4 py-2 rounded-full text-sm font-medium"
@@ -55,27 +57,35 @@ export default function Project2() {
                             >
                             <span
                                 className="badge bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 px-4 py-2 rounded-full text-sm font-medium"
-                            >Passport-JWT</span
+                            >pgvector</span
                             >
                             <span
                                 className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-4 py-2 rounded-full text-sm font-medium"
-                            >Bcrypt</span
+                            >JWT Auth</span
+                            >
+                            <span
+                                className="badge bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 px-4 py-2 rounded-full text-sm font-medium"
+                            >Cloudinary</span
+                            >
+                            <span
+                                className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-4 py-2 rounded-full text-sm font-medium"
+                            >Docker</span
                             >
                         </div>
                         <p className="text-lg text-slate-600 dark:text-slate-300">
-                            Backend development for C.R.A.C.K educational platform with secure
-                            authentication, role-based access control, and robust database
-                            architecture.
+                            Production-grade e-commerce backend for Mamabear, a specialized platform 
+                            for dietary products and supplements targeting breastfeeding mothers. Built 
+                            with enterprise-level architecture, comprehensive security, and scalable infrastructure.
                         </p>
                     </div>
 
-                    {/* <!-- Project Image Gallery --> */}
+                    {/* Project Image Gallery */}
                     <div className="max-w-5xl mx-auto mb-12">
+                        {/* Main Image */}
                         <div
-                            className="glass-card rounded-2xl overflow-hidden shadow-2xl p-8 bg-gradient-to-br from-purple-500 via-indigo-500 to-teal-500 group"
-                        // onclick="openImageModal(0)"
+                            className="glass-card rounded-2xl overflow-hidden shadow-2xl mb-4 group"
                         >
-                            <div className="text-center text-teal-700 dark:text-teal-300">
+                            <div className="text-center text-teal-700 dark:text-teal-300 p-16 bg-gradient-to-br from-indigo-500 via-purple-500 to-teal-500">
                                 <svg
                                     className="w-24 h-24 mx-auto mb-4 opacity-80"
                                     fill="none"
@@ -86,23 +96,23 @@ export default function Project2() {
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
                                         strokeWidth="1.5"
-                                        d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"
                                     ></path>
                                 </svg>
-                                <h2 className="text-2xl font-bold">C.R.A.C.K Project</h2>
-                                <p className="opacity-80">Backend Architecture</p>
+                                <h2 className="text-2xl font-bold">Mamabear Backend</h2>
+                                <p className="opacity-80">Enterprise E-Commerce Infrastructure</p>
                             </div>
                         </div>
                         <div className="flex gap-3 overflow-x-auto pb-2 mt-4">
-                            <ImageGallery images={images.slice(4, 8)} />
+                            <ImageGallery images={images.slice(20, 24)} />
                         </div>
                     </div>
 
-                    {/* <!-- Project Content Grid --> */}
+                    {/* Project Content Grid */}
                     <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {/* <!-- Main Content --> */}
                         <div className="lg:col-span-2 space-y-8">
-                            {/* <!-- Overview --> */}
+                            {/* Overview */}
                             <div className="glass-card rounded-2xl p-6 sm:p-8 shadow-xl">
                                 <h2
                                     className="text-2xl font-bold mb-4 text-slate-800 dark:text-white"
@@ -112,24 +122,19 @@ export default function Project2() {
                                 <p
                                     className="text-slate-600 dark:text-slate-300 leading-relaxed mb-4"
                                 >
-                                    C.R.A.C.K is a comprehensive educational platform built with
-                                    Nest.js backend, featuring secure authentication systems,
-                                    role-based access control, and efficient data management using
-                                    Prisma ORM with PostgreSQL.
+                                    Mamabear is a specialized e-commerce platform serving the unique needs of breastfeeding mothers. The backend service handles high-traffic inventory management, structured catalog systems, localized logistics coordination, and comprehensive administrative reporting mechanisms. This production-grade infrastructure replaces legacy systems with a robust, secure, and scalable architecture built on NestJS and PostgreSQL.
                                 </p>
                                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                                    This backend system handles user authentication, course
-                                    management, and administrative operations with a focus on
-                                    security, scalability, and maintainability.
+                                    The system supports dynamic multi-variant inventory controls, transaction records with payment gateway integration, sophisticated shipping estimations based on location data, and real-time analytics dashboards. It features an enterprise-grade relational database schema with over 30 sequential migrations, vectorized semantic similarity for product recommendations, automated load testing validations, and comprehensive API endpoint configurations.
                                 </p>
                             </div>
 
-                            {/* <!-- Key Features --> */}
+                            {/* Key Achievements */}
                             <div className="glass-card rounded-2xl p-6 sm:p-8 shadow-xl">
                                 <h2
                                     className="text-2xl font-bold mb-6 text-slate-800 dark:text-white"
                                 >
-                                    Key Responsibilities
+                                    Key Achievements
                                 </h2>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3">
@@ -152,12 +157,10 @@ export default function Project2() {
                                         </span>
                                         <div>
                                             <span className="font-semibold text-slate-800 dark:text-white"
-                                            >Secure Authentication System</span
+                                            >30+ Database Migrations</span
                                             >
                                             <p className="text-slate-600 dark:text-slate-400 text-sm">
-                                                Engineered a secure authentication system using
-                                                Passport-JWT and Bcrypt to protect sensitive user data and
-                                                manage session persistence.
+                                                Engineered an enterprise-grade relational database schema with over 30 sequential code-driven migration modules maximizing structural data integrity and supporting complex product relationships.
                                             </p>
                                         </div>
                                     </li>
@@ -181,12 +184,10 @@ export default function Project2() {
                                         </span>
                                         <div>
                                             <span className="font-semibold text-slate-800 dark:text-white"
-                                            >Role-Based Access Control (RBAC)</span
+                                            >Vectorized Embeddings for Recommendations</span
                                             >
                                             <p className="text-slate-600 dark:text-slate-400 text-sm">
-                                                Developed a role-based access control framework with
-                                                custom guards to strictly differentiate administrative
-                                                privileges from student access levels.
+                                                Integrated geometric embedding service executing similarity computations on text inputs to serve context-aware related-product recommendations using pgvector technology.
                                             </p>
                                         </div>
                                     </li>
@@ -210,12 +211,10 @@ export default function Project2() {
                                         </span>
                                         <div>
                                             <span className="font-semibold text-slate-800 dark:text-white"
-                                            >Relational Database Schema</span
+                                            >Load Testing & Performance Validation</span
                                             >
                                             <p className="text-slate-600 dark:text-slate-400 text-sm">
-                                                Architected a relational database schema using Prisma ORM
-                                                and PostgreSQL to efficiently manage many-to-many
-                                                relationships between users and courses.
+                                                Configured explicit load-testing automation using k6 with targeted concurrent virtual users validating sub-500ms API response latency thresholds under production load.
                                             </p>
                                         </div>
                                     </li>
@@ -239,19 +238,17 @@ export default function Project2() {
                                         </span>
                                         <div>
                                             <span className="font-semibold text-slate-800 dark:text-white"
-                                            >Data Validation Pipes</span
+                                            >Automated CSV Export Utilities</span
                                             >
                                             <p className="text-slate-600 dark:text-slate-400 text-sm">
-                                                Created automated data validation and transformation pipes
-                                                globally to ensure API reliability and maintain consistent
-                                                data integrity across all endpoints.
+                                                Formulated automated data processing utilities utilizing stream-based formatting to safely export system dashboard metrics into portable comma-separated spreadsheets.
                                             </p>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
 
-                            {/* <!-- Technical Highlights --> */}
+                            {/* Technical Highlights */}
                             <div className="glass-card rounded-2xl p-6 sm:p-8 shadow-xl">
                                 <h2
                                     className="text-2xl font-bold mb-6 text-slate-800 dark:text-white"
@@ -265,12 +262,10 @@ export default function Project2() {
                                         <h3
                                             className="text-lg font-semibold text-indigo-600 dark:text-indigo-400 mb-2"
                                         >
-                                            Security First
+                                            Multi-Tenant Architecture
                                         </h3>
                                         <p className="text-slate-600 dark:text-slate-400 text-sm">
-                                            Implemented JWT tokens with refresh token rotation for
-                                            persistent and secure sessions. All passwords hashed with
-                                            Bcrypt for maximum security.
+                                            Structured modular NestJS architecture with feature modules for Auth, Products, Cart, Orders, Inventory, Payments, and Analytics. JWT-based authentication with role-based access control (RBAC) guards protecting sensitive endpoints.
                                         </p>
                                     </div>
                                     <div
@@ -279,21 +274,43 @@ export default function Project2() {
                                         <h3
                                             className="text-lg font-semibold text-teal-600 dark:text-teal-400 mb-2"
                                         >
-                                            Scalable Architecture
+                                            Third-Party Integrations
                                         </h3>
                                         <p className="text-slate-600 dark:text-slate-400 text-sm">
-                                            Built with Nest.js modular architecture allowing easy
-                                            scaling and maintenance. Used dependency injection for loose
-                                            coupling.
+                                            Bound transactional merchant integrations with Midtrans payment gateway, location-based shipping cost calculations, and Cloudinary cloud-based media file uploading. Nodemailer for transactional email workflows.
+                                        </p>
+                                    </div>
+                                    <div
+                                        className="p-4 rounded-xl bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200 dark:border-indigo-800"
+                                    >
+                                        <h3
+                                            className="text-lg font-semibold text-indigo-600 dark:text-indigo-400 mb-2"
+                                        >
+                                            Advanced Database Design
+                                        </h3>
+                                        <p className="text-slate-600 dark:text-slate-400 text-sm">
+                                            Prisma ORM for declarative data modeling, pgvector for semantic similarity computations, and database seeding for consistent testing environments. Complex relational schemas handling products, variants, inventory, orders, and shipments.
+                                        </p>
+                                    </div>
+                                    <div
+                                        className="p-4 rounded-xl bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800"
+                                    >
+                                        <h3
+                                            className="text-lg font-semibold text-teal-600 dark:text-teal-400 mb-2"
+                                        >
+                                            CI/CD & DevOps
+                                        </h3>
+                                        <p className="text-slate-600 dark:text-slate-400 text-sm">
+                                            Docker containerization, GitHub Actions automated pipelines, Railway deployment infrastructure, and comprehensive test coverage with Jest and Supertest for smoke testing.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* <!-- Sidebar --> */}
+                        {/* Sidebar */}
                         <div className="space-y-6">
-                            {/* <!-- Project Info Card --> */}
+                            {/* Project Info Card */}
                             <div className="glass-card rounded-2xl p-6 shadow-xl">
                                 <h3
                                     className="text-lg font-semibold mb-4 text-slate-800 dark:text-white"
@@ -306,15 +323,7 @@ export default function Project2() {
                                         >Role</span
                                         >
                                         <p className="text-slate-800 dark:text-white font-medium">
-                                            Backend Developer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <span className="text-sm text-slate-500 dark:text-slate-400"
-                                        >Timeline</span
-                                        >
-                                        <p className="text-slate-800 dark:text-white font-medium">
-                                            Nov, 2025 - Jan, 2026
+                                            Backend Engineer
                                         </p>
                                     </li>
                                     <li>
@@ -322,21 +331,29 @@ export default function Project2() {
                                         >Category</span
                                         >
                                         <p className="text-slate-800 dark:text-white font-medium">
-                                            Backend Development
+                                            E-Commerce Backend
                                         </p>
                                     </li>
                                     <li>
                                         <span className="text-sm text-slate-500 dark:text-slate-400"
-                                        >Team Size</span
+                                        >Scale</span
                                         >
                                         <p className="text-slate-800 dark:text-white font-medium">
-                                            Individual Project
+                                            High-Traffic Production
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <span className="text-sm text-slate-500 dark:text-slate-400"
+                                        >Environment</span
+                                        >
+                                        <p className="text-slate-800 dark:text-white font-medium">
+                                            Docker + Railway
                                         </p>
                                     </li>
                                 </ul>
                             </div>
 
-                            {/* <!-- Tech Stack --> */}
+                            {/* Tech Stack */}
                             <div className="glass-card rounded-2xl p-6 shadow-xl">
                                 <h3
                                     className="text-lg font-semibold mb-4 text-slate-800 dark:text-white"
@@ -346,7 +363,7 @@ export default function Project2() {
                                 <div className="flex flex-wrap gap-2">
                                     <span
                                         className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-lg text-sm"
-                                    >Nest.js</span
+                                    >NestJS</span
                                     >
                                     <span
                                         className="badge bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 px-3 py-1 rounded-lg text-sm"
@@ -358,47 +375,68 @@ export default function Project2() {
                                     >
                                     <span
                                         className="badge bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 px-3 py-1 rounded-lg text-sm"
-                                    >Prisma ORM</span
+                                    >Prisma</span
                                     >
                                     <span
                                         className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-lg text-sm"
-                                    >Passport-JWT</span
+                                    >pgvector</span
                                     >
                                     <span
                                         className="badge bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 px-3 py-1 rounded-lg text-sm"
-                                    >Bcrypt</span
+                                    >JWT</span
                                     >
                                     <span
                                         className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-lg text-sm"
+                                    >Cloudinary</span
+                                    >
+                                    <span
+                                        className="badge bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 px-3 py-1 rounded-lg text-sm"
+                                    >Midtrans</span
+                                    >
+                                    <span
+                                        className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-lg text-sm"
+                                    >Docker</span
+                                    >
+                                    <span
+                                        className="badge bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 px-3 py-1 rounded-lg text-sm"
                                     >Railway</span
+                                    >
+                                    <span
+                                        className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 px-3 py-1 rounded-lg text-sm"
+                                    >Jest</span
+                                    >
+                                    <span
+                                        className="badge bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 px-3 py-1 rounded-lg text-sm"
+                                    >k6</span
                                     >
                                 </div>
                             </div>
 
-                            {/* <!-- Action Buttons --> */}
+                            {/* Links */}
                             <div className="glass-card rounded-2xl p-6 shadow-xl">
                                 <h3
                                     className="text-lg font-semibold mb-4 text-slate-800 dark:text-white"
                                 >
-                                    View Project
+                                    Links
                                 </h3>
-                                <div className="space-y-3">
-                                    <button
-                                        // onclick="openImageModal(0)"
-                                        className="block w-full bg-indigo-600 hover:bg-indigo-700 text-white text-center py-3 px-4 rounded-xl font-semibold transition-all duration-300 btn-primary"
+                                <div className="flex flex-col gap-3">
+                                    <Link
+                                        href="https://mamabear.example.com"
+                                        target="_blank"
+                                        className="w-full bg-slate-800 hover:bg-slate-700 text-white py-2 px-4 rounded-lg font-medium text-sm transition-all duration-300 text-center"
                                     >
                                         Live Demo
-                                    </button>
-                                    <Link
-                                        href="https://github.com/Revou-FSSE-Jun25/crack-be-perhisi"
+                                    </Link
+                                    >
+                                    <a
+                                        href="https://github.com/mamabear"
                                         target="_blank"
-                                        className="block w-full bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-800 dark:text-white text-center py-3 px-4 rounded-xl font-semibold transition-all duration-300"
+                                        className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-lg font-medium text-sm transition-all duration-300 text-center"
                                     >
                                         Source Code
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
-
                             {/* Other Projects */}
                             <div className="glass-card rounded-2xl p-6 shadow-xl">
                                 <h3
@@ -418,6 +456,19 @@ export default function Project2() {
                                         <span
                                             className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
                                         >HTML, CSS, JavaScript</span
+                                        >
+                                    </Link>
+                                    <Link
+                                        href="/project2"
+                                        className="block p-3 rounded-xl bg-slate-100 dark:bg-slate-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
+                                    >
+                                        <span
+                                            className="text-slate-800 dark:text-white font-medium text-sm"
+                                        >C.R.A.C.K Backend</span
+                                        >
+                                        <span
+                                            className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
+                                        >Nest.js, PostgreSQL</span
                                         >
                                     </Link>
                                     <Link
@@ -459,26 +510,14 @@ export default function Project2() {
                                         >Next.js, Tailwind CSS</span
                                         >
                                     </Link>
-                                    <Link
-                                        href="/project6"
-                                        className="block p-3 rounded-xl bg-slate-100 dark:bg-slate-700/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
-                                    >
-                                        <span
-                                            className="text-slate-800 dark:text-white font-medium text-sm"
-                                        >Mamabear E-Commerce Backend</span
-                                        >
-                                        <span
-                                            className="block text-xs text-slate-500 dark:text-slate-400 mt-1"
-                                        >Nest.js, PostgreSQL</span
-                                        >
-                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <Footer />
-        </div >
+        </div>
     );
 }

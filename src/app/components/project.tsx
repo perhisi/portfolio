@@ -328,6 +328,74 @@ export default function Project() {
                             </div>
                         </div>
 
+                        {/* <!-- Project 6 --> */}
+                        <div
+                            className="project-card bg-white dark:bg-slate-800 rounded-2xl shadow-lg overflow-hidden flex flex-col group"
+                        >
+                            <div className="relative overflow-hidden">
+                                <img
+                                    src="icons/project-6/mamabear.png"
+                                    alt="Mamabear E-Commerce Backend"
+                                    className="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                                />
+                                <div
+                                    className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                ></div>
+                            </div>
+                            <div className="p-5 sm:p-6 flex flex-col flex-1">
+                                <h3
+                                    className="text-lg sm:text-xl font-semibold mb-3 text-slate-800 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300"
+                                >
+                                    Mamabear E-Commerce Backend
+                                </h3>
+                                <div className="flex flex-wrap gap-2 mb-3">
+                                    <span
+                                        className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs px-2 py-1 rounded-lg"
+                                    >NestJS</span
+                                    >
+                                    <span
+                                        className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs px-2 py-1 rounded-lg"
+                                    >PostgreSQL</span
+                                    >
+                                    <span
+                                        className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs px-2 py-1 rounded-lg"
+                                    >Prisma</span
+                                    >
+                                    <span
+                                        className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs px-2 py-1 rounded-lg"
+                                    >pgvector</span
+                                    >
+                                    <span
+                                        className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs px-2 py-1 rounded-lg"
+                                    >JWT</span
+                                    >
+                                    <span
+                                        className="badge bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-xs px-2 py-1 rounded-lg"
+                                    >Docker</span
+                                    >
+                                </div>
+                                <p className="text-sm text-slate-600 dark:text-slate-400 mb-4 flex-1">
+                                    Production-grade e-commerce backend for dietary products and supplements targeting breastfeeding mothers. Features enterprise-level architecture with 30+ database migrations, AI-powered product recommendations, and comprehensive payment integrations.<br /><span
+                                        className="italic text-indigo-600 dark:text-indigo-400"
+                                    >Role: Backend Engineer</span
+                                    >
+                                </p>
+                                <div className="flex gap-3 mt-auto">
+                                    <Link
+                                        href="./project6"
+                                        className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-2 px-4 rounded-lg font-medium text-sm transition-all duration-300 btn-primary"
+                                    >View Details</Link
+                                    >
+                                    <Link
+                                        href="https://github.com"
+                                        target="_blank"
+                                        className="flex-1 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-800 dark:text-white text-center py-2 px-4 rounded-lg font-medium text-sm transition-all duration-300"
+                                    >Source Code</Link
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
