@@ -421,20 +421,20 @@ export default function Project6() {
                                 </h3>
                                 <div className="flex flex-col gap-3">
                                     <Link
-                                        href="https://mamabear.example.com"
+                                        href="https://mamabearmart.vercel.app/"
                                         target="_blank"
                                         className="w-full bg-slate-800 hover:bg-slate-700 text-white py-2 px-4 rounded-lg font-medium text-sm transition-all duration-300 text-center"
                                     >
                                         Live Demo
                                     </Link
                                     >
-                                    <a
-                                        href="https://github.com/mamabear"
+                                    <Link
+                                        href="https://github.com/regencode/mamabear-backend"
                                         target="_blank"
                                         className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-lg font-medium text-sm transition-all duration-300 text-center"
                                     >
                                         Source Code
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             {/* Other Projects */}

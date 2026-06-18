@@ -19,4 +19,8 @@ export const images: string[] = [
   "/icons/project-5/Screenshot 2026-05-10 110228.png",
   "/icons/project-5/Screenshot 2026-05-10 110251.png",
   "/icons/project-5/Screenshot 2026-05-10 110314.png",
+  "/icons/project-6/Screenshot From 2026-06-19 04-06-35.png",
+  "/icons/project-6/Screenshot From 2026-06-19 04-07-21.png",
+  "/icons/project-6/Screenshot From 2026-06-19 04-07-58.png",
+  "/icons/project-6/Screenshot From 2026-06-19 04-10-52.png",
 ];

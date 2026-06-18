@@ -256,16 +256,16 @@ export default function Project() {
                                     >
                                 </p>
                                 <div className="flex gap-3 mt-auto">
-                                    <a
+                                    <Link
                                         href="./project4"
                                         className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white text-center py-2 px-4 rounded-lg font-medium text-sm transition-all duration-300 btn-primary"
-                                    >View Details</a
+                                    >View Details</Link
                                     >
-                                    <a
+                                    <Link
                                         href="https://github.com/Revou-FSSE-Jun25/milestone-4-perhisi"
                                         target="_blank"
                                         className="flex-1 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-800 dark:text-white text-center py-2 px-4 rounded-lg font-medium text-sm transition-all duration-300"
-                                    >Source Code</a
+                                    >Source Code</Link
                                     >
                                 </div>
                             </div>
@@ -334,7 +334,7 @@ export default function Project() {
                         >
                             <div className="relative overflow-hidden">
                                 <img
-                                    src="icons/project-6/mamabear.png"
+                                    src="icons/project-6/Screenshot From 2026-06-19 04-10-52.png"
                                     alt="Mamabear E-Commerce Backend"
                                     className="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                                 />
@@ -387,7 +387,7 @@ export default function Project() {
                                     >View Details</Link
                                     >
                                     <Link
-                                        href="https://github.com"
+                                        href="https://github.com/regencode/mamabear-backend"
                                         target="_blank"
                                         className="flex-1 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-800 dark:text-white text-center py-2 px-4 rounded-lg font-medium text-sm transition-all duration-300"
                                     >Source Code</Link

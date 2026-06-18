@@ -60,6 +60,7 @@ export default function ImageGallery({ images: displayImages }: { images?: strin
                             alt="Gallery"
                             width={500}
                             height={300}
+                            style={{ width: "auto", height: "auto" }}
                             className="cursor-pointer rounded-lg"
                         />
                     </div>
@@ -81,8 +82,9 @@ export default function ImageGallery({ images: displayImages }: { images?: strin
                     <Image
                         src={imagesToDisplay[currentIndex]}
                         alt="Preview"
-                        width={800}
-                        height={500}
+                        width={1000}
+                        height={700}
+                        style={{ width: "auto", height: "auto" }}
                         className="rounded-lg"
                     />
 
@@ -108,8 +110,9 @@ export default function ImageGallery({ images: displayImages }: { images?: strin
                                 key={index}
                                 src={img}
                                 alt="thumb"
-                                width={80}
-                                height={60}
+                                width={140}
+                                height={120}
+                                style={{ width: "auto", height: "auto" }}
                                 onClick={() => selectImage(index)}
                                 className={`cursor-pointer rounded border ${index === currentIndex
                                         ? "border-indigo-500 ring-2 ring-indigo-500/30"

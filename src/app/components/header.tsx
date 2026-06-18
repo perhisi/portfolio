@@ -1,7 +1,27 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link"
 import Image from "next/image"
 
 export default function Header() {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    useEffect(() => {
+        document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === "Escape" && isMobileMenuOpen) {
+                setIsMobileMenuOpen(false);
+            }
+        };
+
+        document.addEventListener("keydown", handleKeyDown);
+        return () => document.removeEventListener("keydown", handleKeyDown);
+    }, [isMobileMenuOpen]);
+
+    const closeMobileMenu = () => setIsMobileMenuOpen(false);
+
     return (
         <div>
             {/* <!-- Header Section --> */}
@@ -77,9 +97,10 @@ export default function Header() {
 
                         {/* <!-- Mobile Menu Button --> */}
                         <button
-                            id="mobile-open-button"
                             className="md:hidden text-2xl p-2 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
                             aria-label="Open mobile menu"
+                            aria-expanded={isMobileMenuOpen}
+                            onClick={() => setIsMobileMenuOpen(true)}
                         >
                             <svg
                                 className="w-6 h-6"
@@ -100,28 +121,31 @@ export default function Header() {
             </header>
             {/* <!-- Mobile Menu --> */}
             <nav
-                id="mobile-menu"
-                className="hidden md:hidden fixed inset-0 z-50 bg-slate-900/95 dark:bg-slate-900/98 backdrop-blur-sm"
+                className={`${isMobileMenuOpen ? "" : "hidden"} md:hidden fixed inset-0 z-50 bg-slate-900/95 dark:bg-slate-900/98 backdrop-blur-sm`}
             >
                 <div className="flex flex-col items-center justify-center h-full gap-8">
                     <Link
                         href="#home"
                         className="text-2xl font-semibold text-white hover:text-indigo-400 transition-colors duration-300"
+                        onClick={closeMobileMenu}
                     >Home</Link
                     >
                     <Link
                         href="#about"
                         className="text-2xl font-semibold text-white hover:text-indigo-400 transition-colors duration-300"
+                        onClick={closeMobileMenu}
                     >About</Link
                     >
                     <Link
                         href="#projects"
                         className="text-2xl font-semibold text-white hover:text-indigo-400 transition-colors duration-300"
+                        onClick={closeMobileMenu}
                     >Projects</Link
                     >
                     <Link
                         href="#contact"
                         className="text-2xl font-semibold text-white hover:text-indigo-400 transition-colors duration-300"
+                        onClick={closeMobileMenu}
                     >Contact</Link
                     >
                     <div className="flex gap-4 mt-4">
@@ -145,10 +169,10 @@ export default function Header() {
                         </Link>
                     </div>
                     <button
-                        id="mobile-close-button"
                         className="absolute top-4 right-4 text-white text-3xl p-2"
                         style={{ zIndex: 9999 }}
                         aria-label="Close mobile menu"
+                        onClick={closeMobileMenu}
                     >
                         &times;
                     </button>

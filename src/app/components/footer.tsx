@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <div>
@@ -11,7 +13,7 @@ export default function Footer() {
                         © 2026 Perhisi Ardhian. All rights reserved.
                     </p>
                     <div className="flex gap-4">
-                        <a
+                        <Link
                             href="https://github.com/perhisi"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -19,8 +21,8 @@ export default function Footer() {
                             className="p-2 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
                         >
                             <img src="/github.svg" alt="GitHub" className="w-5 h-5" />
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://www.linkedin.com/in/perhisi-ardhian-dec89/"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -28,7 +30,7 @@ export default function Footer() {
                             className="p-2 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors duration-300"
                         >
                             <img src="/linkedin.svg" alt="LinkedIn" className="w-5 h-5" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

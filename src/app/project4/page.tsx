@@ -12,7 +12,7 @@ export default function Project4() {
             <section className="min-h-screen pt-24 pb-16">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     {/* <!-- Back Button --> */}
-                    <a
+                    <Link
                         href="/#projects"
                         className="inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300 mb-8 group"
                     >
@@ -30,7 +30,7 @@ export default function Project4() {
                             ></path>
                         </svg>
                         Back to Projects
-                    </a>
+                    </Link>
                     {/* <!-- Project Header --> */}
                     <div className="max-w-4xl mx-auto mb-12">
                         <h1
